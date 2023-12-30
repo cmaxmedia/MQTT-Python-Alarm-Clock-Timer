@@ -1,0 +1,10 @@
+[Unit]
+Description=MQTT Timer
+After=multi-user.target
+
+[Service]
+Type=idle
+ExecStart= /usr/bin/python3 /home/python/mqtt_timer.py
+
+[Install]
+WantedBy=multi-user.target
